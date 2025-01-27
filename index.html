@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+</head>
+<body>
+    <h1>Enter Stock Data for Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="Open">Open:</label>
+        <input type="text" name="Open" required><br><br>
+
+        <label for="High">High:</label>
+        <input type="text" name="High" required><br><br>
+
+        <label for="Low">Low:</label>
+        <input type="text" name="Low" required><br><br>
+
+        <label for="Previous">Previous:</label>
+        <input type="text" name="Previous" required><br><br>
+
+        <label for="Change">Change:</label>
+        <input type="text" name="Change" required><br><br>
+
+        <label for="%Change">% Change:</label>
+        <input type="text" name="%Change" required><br><br>
+
+        <label for="Year">Year:</label>
+        <input type="text" name="Year" required><br><br>
+
+        <label for="Month">Month:</label>
+        <input type="text" name="Month" required><br><br>
+
+        <label for="Day">Day:</label>
+        <input type="text" name="Day" required><br><br>
+
+        <label for="Day_of_week">Day of the week:</label>
+        <input type="text" name="Day_of_week" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>
